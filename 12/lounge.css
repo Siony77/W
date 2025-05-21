@@ -1,0 +1,29 @@
+h1, h2 {
+  /* font-family: 'Segoe Script'; */
+  /* color: grey; */
+}
+
+
+h1 {
+  border-bottom: 1px solid rgba(255, 74, 74, 0.39);
+}
+
+p {
+  /* font-family: 'Segoe Script'; */
+  /* color: maroon; */
+}
+body {
+  font-size: 20px;
+  font-family: 'Segoe Script';
+}
+body{
+	color: #c4444d3b;
+	color: #c04851;
+
+
+
+
+	color: #c04851;
+	color: rgba(211, 94, 226, 0.733);
+	color: #c04851;
+}
