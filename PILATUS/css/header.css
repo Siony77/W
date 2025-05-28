@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'FF Sanuk OT', sans-serif;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90px;
+    padding: 0 14px;
+    box-sizing: border-box;
+}
+
+.a {
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    position: absolute;
+    left: 50;
+    top: 35px;
+}
+
+.mnc {
+    height: 90px;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    max-width: 1172px;
+    display: flex;
+    z-index: 100;
+    margin: 0 auto;
+}
+
+.mnc::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #e30045;
+    bottom: 0;
+    left: 0;
+    display: block;
+}
+
+.logo {
+    background-color: #e30045;
+    width: 227px;
+    height: 90px;
+    padding: 12px 25px;
+    box-sizing: border-box;
+    display: block;
+    transition: background-color 0.2s ease-out;
+}
+
+.logo:hover {
+    background-color: #cf003f;
+}
+
+.mn {
+    display: block;
+    height: 90px;
+}
+
+.mn ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.mn>ul>li:first-child {
+    padding-left: 35px;
+
+}
+
+.mn>ul>li:last-child {
+    padding-right: 35px;
+}
+
+.li2{
+    padding: 0px 14px;
+}
+
+.mn>ul>li>a {
+    font-size: 18px;
+    padding: 0 25px 0 25px;
+    text-transform: uppercase;
+    color: #625651;
+    font-family: "FF Sanuk OT Bold", sans-serif;
+    line-height: 86px;
+    letter-spacing: 1px;
+    height: 90px;
+    padding: 0 21px;
+    transition: color 0.2s ease-out;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.mn > ul > li > a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(17px);
+    transform: translateX(-50%) translateY(17px);
+    bottom: 0;
+    border-style: solid;
+    border-width: 0 7px 7px 7px;
+    border-color: transparent transparent #e30045 transparent;
+    transition: transform 0.15s ease-out;
+}
+
+.mn>ul>li:hover a::after{
+    bottom: 10px;
+        -ms-transform: translateX(-50%) translateY(7px);
+    transform: translateX(-50%) translateY(7px);
+}
+
+.mn>ul>li:hover a{
+    color:#e30045;
+}
+
+.llc {
+    position: relative;
+    display: flex;
+
+}
+
+.llc::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 87px;
+    background-color: #f1f1f1;
+}
+
+.lm {
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 28px;
+    height: 90px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+}
+
+.lm:before {
+    content: "";
+    background-color: #f1f1f1;
+    position: absolute;
+    width: 1px;
+    right: 0;
+    top: 0;
+    height: 87px;
+}
+
+.sp {
+    margin-left: 4px;
+}
+
+.live {
+    padding: 10px 20px;
+    color: white;
+    background-color: #e30045;
+    border-radius: 4px;
+    font-size: 10px;
+    height: 34px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease-out,background-color 0.2s ease-out;
+}
+
+.live:hover {
+    background-color: #f7f5f3;
+    font-size: 10px;
+    color: #625651;
+}
+
+.tickets {
+    background-color: #f7f5f3;
+    font-size: 10px;
+    color: #625651;
+    margin-left: 10px;
+}
+
+.tickets:hover {
+    color: white;
+    background-color: #e30045;
+}
+
+.langsearch{
+    padding: 0 25px;
+    padding-top: 32px;
+}
+
+.langsearch a{
+    padding: 5px;
+    text-decoration: none;
+    color:#625651;
+}
+
+.langsearch a:hover{
+    color: #e30045;
+}

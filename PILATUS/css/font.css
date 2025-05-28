@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Icons_v3";
+    src: url('../font/Icons_v3.woff');
+}
+
+@font-face {
+    font-family: 'FF Sanuk OT Bold';
+    src: url('../font/334015_2_0.woff2');
+}
+
+@font-face {
+    font-family: 'FF Sanuk OT';
+    src: url('../font/334015_3_0.woff2');
+}
+
+.icon-360cam:before,.icon-alert_alert:before,.icon-alert_info:before,.icon-alert_pilon:before,.icon-alert_snow:before,.icon-alert_tool:before,.icon-alert_wind:before,.icon-arrow-bottom:before,.icon-arrow-left:before,.icon-arrow-right:before,.icon-arrow-top:before,.icon-binoculars:before,.icon-bus:before,.icon-calendar:before,.icon-check:before,.icon-close-2:before,.icon-close:before,.icon-doc:before,.icon-docx:before,.icon-dragon-ride:before,.icon-dragon:before,.icon-facebook:before,.icon-filter:before,.icon-gondola-small:before,.icon-home:before,.icon-icon-ticket:before,.icon-info:before,.icon-instagram:before,.icon-jpg:before,.icon-language:before,.icon-live:before,.icon-mail:before,.icon-map-marker:before,.icon-map:before,.icon-minus:before,.icon-pdf:before,.icon-pedestrian:before,.icon-play:before,.icon-plus:before,.icon-rack-railway:before,.icon-restaurant:before,.icon-search:before,.icon-ship:before,.icon-sledge:before,.icon-star:before,.icon-summer:before,.icon-ticket:before,.icon-train:before,.icon-tripadvisor:before,.icon-twitter:before,.icon-webcam:before,.icon-winter:before,.icon-xls:before,.icon-xlsx:before,.icon-youtube:before,#go-language:before,#go-search:before,.form-icon-calendar:before,.input-group.search-group:before,ul.check-status li.status-open:after,ul.check-status li.status-closed:after,.live-accordion-item > a:before,.live-accordion-item.is-active > a:before,#scroll-down-link:before,#totop:before,.breadcrumb nav ul li:before,.mm-menu .mm-listview > li .mm-next:after,.mm-prev:before,.map-filter [type="checkbox"]:not(:checked) + label:after,.map-filter [type="checkbox"]:checked + label:after,.map-tooltip .status-message.status-closed:before,.map-tooltip .status-message.status-open:before,.reveal-in-map .status-message.green:before,.reveal-in-map .status-message.red:before,.accordion-title:before,.is-active .accordion-title:before,.has-tip:before {
+    font-family: "Icons_v3";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.icon {
+    transition: color 0.2s ease-out;
+}
+
+.icon-live:before {
+    content: "";
+    font-size: 18px;
+}
+
+.icon-ticket:before {
+    content: "";
+    font-size: 18px;
+}
+
+.icon-map:before {
+    content: "";
+    font-size: 16px;
+}
+
+.icon-language:before {
+    content: "";
+}
+
+.icon-search:before {
+    content: "";
+}

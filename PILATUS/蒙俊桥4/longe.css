@@ -1,0 +1,262 @@
+body {
+    font-family: ARIAL,sans-serif;  /* 设置默认字体 */
+    margin: 0;  /* 清除默认外边距 */
+    padding: 0;  /* 清除默认内边距 */
+    background-image: url('背景图.jpg');  /* 设置背景图片 */
+    background-position: center;  /* 背景图居中 */
+    background-size: cover;  /* 背景图覆盖整个页面 */
+    background-repeat: no-repeat;  /* 禁止背景图重复 */
+    background-attachment: fixed;  /* 固定背景图不滚动 */
+    display: flex;  /* 使用flex布局 */
+    align-items: center;  /* 垂直居中 */
+    min-height: 108vh;  /* 最小高度为视窗高度的108% */
+    margin: 0;  /* 再次清除外边距 */
+    min-height: 100vh;  /* 最小高度为视窗高度的100% */
+    display: grid;  /* 使用grid布局 */
+    place-items: center; /* 水平和垂直居中 */
+    background-size: cover;  /* 再次设置背景图覆盖 */
+    background-position: center;  /* 再次设置背景图居中 */
+}
+
+/* 左上角文本样式 */
+.top-left-text {
+    position: absolute;  /* 绝对定位 */
+    top: 85px;  /* 距离顶部85px */
+    left: 145px;  /* 距离左侧145px */
+    color: rgb(78, 73, 73);  /* 文本颜色 */
+    font-size: 18px;  /* 字体大小 */
+}
+
+/* 右上角文本样式 */
+.top-right-text {
+    color: rgb(80, 75, 75);  /* 文本颜色 */
+    position: absolute;  /* 绝对定位 */
+    top: 85px;  /* 距离顶部85px */
+    right: 145px;  /* 距离右侧145px */
+    font-size: 20px;  /* 字体大小 */
+}
+
+/* 照片容器样式 */
+.photo-container {
+    display: flex;  /* 使用flex布局 */
+    flex-wrap: nowrap; 
+    justify-content: center;  /* 水平居中 */
+    margin: 20px auto ;  /* 外边距：上下45px，左右自动 */
+    padding: 0;  /* 特殊内边距设置 */
+    gap: 15px; /* 子元素间距10px */
+    width: 90%;  /* 宽度100% */
+    max-width: 1200px;  /* 最大宽度1200px */
+    overflow-x: auto;
+    box-sizing: border-box;  /* 盒模型计算方式 */
+    color: white;  /* 文本颜色 */
+}
+
+/* 照片容器内图片样式 */
+.photo-container img {
+    flex: 1;  /* 弹性项目扩展比例 */
+    height: auto;  /* 高度自动 */
+    object-fit: contain;  /* 图片内容适应 */
+    filter: brightness(0.6);  /* 亮度60% */
+    transition: filter 0.16s ease; /* 亮度变化过渡效果 */
+}
+
+/* 鼠标悬停时图片变暗效果 */
+.image-wrapper:hover .photo-container img {
+    /* 悬停时让图片更暗，亮度降低到原始亮度的35% (0.6*0.65≈0.39) */
+    filter: brightness(0.3); 
+}
+
+/* 居中文本样式 */
+.center-text {
+    margin-bottom: 30px; /* 底部外边距 */
+    padding-bottom: 65px;
+    font-family: 'Nunito', sans-serif;  /* 字体设置 */
+    font-weight: 700;  /* 字体粗细 */
+    letter-spacing: 0.8px;  /* 字母间距 */
+    color: white;  /* 文本颜色 */
+    background-image: linear-gradient(red, red);  /* 模拟下划线 */
+    background-size: 12% 2px; /* 下划线长度和高度 */
+    background-repeat: no-repeat;  /* 不重复 */
+    background-position: center bottom; /* 下划线位置 */
+    padding-bottom: 25px; /* 下划线与文字间距 */
+}
+
+/* 图片包装器样式 */
+.image-wrapper {
+    width: 23%; 
+    min-width: 263px; /* 固定宽度 */
+    height: 390px;  /* 固定高度 */
+    margin: -20px 8px 8px 8px;  /* 调整外边距，将上外边距设为 -20px 以向上移动 */
+    position: relative;  /* 相对定位 */
+    flex-shrink: 0;
+}
+.image-text {
+    position: absolute;
+    bottom: 80px; 
+    left: 20px;
+    right:20px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    font-family: 'FF Sanuk OT', sans-serif;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+.wage-text {
+    position: absolute;
+    bottom: 110px;
+    font-size: 18px;
+    left: 20px;
+    right:20px;
+    text-align: center;
+    color: white;
+    font-family: 'FF Sanuk OT', sans-serif;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.xiao-text {
+    font-family: 'FF Sanuk OT', sans-serif;
+    color: white;
+    position: absolute;
+    top: 88%;
+    font-size: 14px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 19px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* 图片样式 */
+.image-wrapper img {
+    width: 100%;  /* 宽度100% */
+    height: 100%;  /* 高度100% */
+    object-fit: cover;  /* 图片覆盖方式 */
+}
+
+/* 小文本样式 */
+.xiao-text{
+    font-family: 'FF Sanuk OT', sans-serif;  /* 字体设置 */
+    color: white;  /* 文本颜色 */
+    position: absolute;  /* 绝对定位 */
+    top: 85%;  /* 垂直位置 */
+    left: 50%;  /* 水平位置 */
+    transform: translate(-50%, -50%);  /* 居中转换 */
+    width: auto;  /* 宽度自适应 */
+    height: 38px;  /* 固定高度 */
+    text-align: center;  /* 文本居中 */
+}
+
+/* 视口容器样式 */
+.viewport {
+    width: 1022px;  /* 固定宽度 */
+    height: 634px;  /* 固定高度 */
+}
+
+/* 图片容器样式 */
+.image-container {
+    position: relative;  /* 相对定位 */
+}
+
+/* 覆盖文字样式 */
+.overlay-text {
+    position: absolute;  /* 绝对定位 */
+    display: flex;  /* flex布局 */
+    align-items: center;  /* 垂直居中 */
+    top: 50%;  /* 垂直位置 */
+    left: 50%;  /* 水平位置 */
+    transform: translate(-50%, -50%);  /* 居中转换 */
+    color: white;  /* 文本颜色 */
+    font-size: 24px;  /* 字体大小 */
+    font-weight: bold;  /* 字体粗细 */
+    text-align: center;  /* 文本居中 */
+    z-index: 1;  /* 层级设置 */
+}
+
+/* 照片容器额外样式 */
+.photo-container {
+    justify-content: center;  /* 水平居中 */
+    align-items: center;  /* 垂直居中 */
+}
+
+/* 图片包装器额外样式 */
+.image-wrapper {
+    margin: 5px;  /* 外边距 */
+    box-sizing: border-box;  /* 盒模型计算方式 */
+    position: relative;  /* 相对定位 */
+}
+
+/* 特殊文本样式 */
+.megr-text {
+    position: fixed;  /* 固定定位 */
+    top: 350px;  /* 垂直位置 */
+    left: -210px;  /* 水平位置 */
+    transition: left 0.5s ease;  /* 过渡效果 */
+    color: red;  /* 文本颜色 */
+}
+
+/* 图片包装器伪元素样式 */
+.image-wrapper::after {
+    content: "DRAGON WORLD";  /* 内容文本 */
+    position: absolute;  /* 绝对定位 */
+    top: 90%; 
+    font-size: 12px;
+    padding: 0% 10px; /* 垂直位置 */
+    left: 50%;  /* 水平位置 */
+    transform: translate(-50%, -50%);  /* 居中转换 */
+    width: 133.31;  /* 固定宽度 */
+    height: 32px;  /* 固定高度 */
+    background-color: #e30045;;  /* 背景颜色 */
+    opacity: 0;  /* 初始透明度 */
+    transition: opacity 0.3s ease;  /* 透明度过渡效果 */
+    pointer-events: none;  /* 禁用鼠标事件 */
+    /* 新增样式确保单行显示 */
+    white-space: nowrap;  /* 禁止换行 */
+    overflow: hidden;  /* 隐藏溢出内容 */
+    text-overflow: ellipsis;  /* 溢出显示省略号 */
+    line-height: 32px;  /* 行高与高度一致 */
+    text-align: center;  /* 文字居中 */
+    font-size: 14px;  /* 调整字体大小 */
+    padding: 0 5px;  /* 添加内边距 */
+}
+
+/* 鼠标悬停时显示伪元素 */
+.image-wrapper:hover::after {
+    opacity: 1;  /* 完全显示 */
+}
+
+/* 图片文字过渡效果 */
+.image-text {
+    transition: transform 0.3s ease;  /* 变换过渡效果 */
+}
+
+/* 鼠标悬停时图片文字上移 */
+.image-wrapper:hover .image-text {
+    transform: translateY(-50px);  /* 上移50px */
+}
+
+/* 小文本过渡效果 */
+.xiao-text {
+    transition: transform 0.3s ease;  
+}
+
+/* 鼠标悬停时小文本上移 */
+.image-wrapper:hover .xiao-text {
+    transform: translateY(-50px);  /* 同时向上移动50px */
+}
+.image-wrapper:nth-child(2)::after,
+.image-wrapper:nth-child(4)::after {
+    content: "MEHR";  /* 修改第二和第四张图片的文字为MEHR */
+    position: absolute;  /* 绝对定位 */
+    top: 85%;  /* 垂直位置 */
+    left: 50%;  /* 水平位置 */
+    transform: translate(-50%, -50%);  /* 居中转换 */
+    width: auto;  /* 宽度自适应 */
+    height: 38px;  /* 固定高度 */
+    text-align: center;  /* 文本居中 */
+}
+.image-wrapper:nth-child(3)::after{
+    content:AB IN DIE HOHE ;
+}

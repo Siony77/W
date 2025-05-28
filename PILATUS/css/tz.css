@@ -1,0 +1,228 @@
+.snc {
+   visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 100%;
+    background-color: #1f1f2e;
+    height: 340px;
+    display: flex;
+}
+
+.li1:hover>.snc {
+    visibility:visible;
+}
+
+.li2:hover>.snc {
+    visibility:visible;
+}
+
+.li3:hover>.snc {
+    visibility:visible;
+}
+
+.s_n_left{
+    width: 25%;
+}
+
+.s_n_right{
+    width: 75%;
+    display: flex;
+    background-color: #000;
+}
+.main-navigation-teaser{
+    padding: 40px 50px;
+}
+.main-navigation-teaser h3{
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'FF Sanuk OT Bold', sans-serif;
+    font-weight: normal;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    color: white;
+    text-transform: none;
+}
+.main-navigation-teaser p{
+    font-size: 12px;
+    line-height: 24px;
+    font-family: 'FF Sanuk OT', sans-serif;
+    font-weight: normal;
+    color: white;
+}
+.main-navigation-teaser div{
+    background-color: #e30045;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: 0;
+    font-size: 10px;
+    line-height: 14px;
+    color: white;
+    padding: 8px 20px;
+    margin: 0 6px 8px 0;
+    transition: background-color 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out;
+    position: relative;
+    font-family: 'FF Sanuk OT', sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.main-navigation-teaser div:hover{
+        background-color: #c3003b;
+}
+.s_n_r_item{
+    opacity: 0.8;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 40px 20px;
+    height: 100%;
+    box-sizing: border-box;
+    transition: opacity 0.2s ease-out;
+}
+.s_n_r_item:hover{
+    opacity: 1;
+}
+.s_n_r_item1{
+    background: url(../img/b1.jpg);
+}
+.s_n_r_item2{
+    background: url(../img/b2.jpg);
+}
+.s_n_r_item3{
+    background: url(../img/b3.jpg);
+}
+.s_n_r_item4{
+    background: url(../img/b4.jpg);
+
+}
+.s_n_r_item h3{
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'FF Sanuk OT Bold', sans-serif;
+    font-weight: normal;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+.s_n_r_item ul{
+    display: block;
+}
+.s_n_r_item ul li{
+    margin: 0 0 5px 0;
+    padding: 0;
+    text-align: center;
+}
+.s_n_r_item ul li div{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    background-color: #1f1f2e;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 15px;
+    transition: background-color 0.2s ease-out;
+    cursor: pointer;
+}
+.s_n_r_item ul li div:hover{
+    background-color: #e30045;
+}
+.s_n_box{
+    width: 58.3%;
+    padding: 40px 0 40px 45px;
+}
+.snb{
+    width: 41.2%;
+    box-sizing: border-box;
+    padding: 40px 25px;
+}
+.s_n_b_item{
+    display: flex;
+    justify-content: space-between;
+}
+.s_n_b_item_left{
+    width: 48%;
+}
+.s_n_box h3{
+    color: white;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 0 0 7px 0;
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 24px;
+    font-family: 'FF Sanuk OT', sans-serif;
+    font-weight: normal;
+    border-bottom: 1px solid #999;
+}
+.s_n_b_item_left ul{
+    display: block;
+}
+.s_n_b_item_left ul li{
+    margin: 0 0 5px 0;
+    padding: 0;
+    text-align: left;
+    box-sizing: border-box;
+}
+.s_n_b_item_left ul li div{
+    width: 100%;
+    font-size: 12px;
+    line-height: 18px;
+    background-color: #1f1f2e;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 15px;
+    transition: background-color 0.2s ease-out;
+    cursor: pointer;
+       box-sizing: border-box;
+}
+.s_n_b_item_left ul li div:hover{
+        background-color: #e30045;
+}
+.s_n_box h4{
+    font-size: 12px;
+    line-height: 24px;
+    font-family: 'FF Sanuk OT', sans-serif;
+    text-transform: none;
+        color: white;
+    margin: 0;
+    padding: 0;
+}
+.s_n_box p{
+    font-size: 12px;
+    line-height: 24px;
+    font-family: 'FF Sanuk OT', sans-serif;
+    text-transform: none;
+    color: #a39590;
+    margin-bottom: 25px;
+}
+.s_n_box span{
+        font-size: 12px;
+    line-height: 24px;
+    font-family: 'FF Sanuk OT', sans-serif;
+    text-transform: none;
+    color: #a39590;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+.s_n_box span:hover{
+    color: #fff;
+}

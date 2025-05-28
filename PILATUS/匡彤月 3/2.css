@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'FF Sanuk OT', sans-serif;
+  background-color: #f7f5f3;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+h3 {
+  color: #5C4F4C;
+  font-size: 0.9375rem;
+  line-height: 1.1875rem;
+  margin-left: 65px;
+  /* margin-bottom: 10px; */
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #c8bfad;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  hyphens: auto;
+  font-weight: normal;
+  margin-top: 200px;
+
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.word3 {
+  color: #625651;
+  font-size: 2rem;
+  font-size: 15px;
+
+  font-family: 'FF Sanuk OT Bold', sans-serif;
+  margin-left: 15px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  /* font-size: 30px; */
+  line-height: 10px;
+  font-weight: bold;
+}
+
+h4 {
+  color: #625651;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 1px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'FF Sanuk OT Bold', sans-serif;
+  letter-spacing: 1px;
+  font-size: 30px;
+  line-height: 10px;
+}
+
+h5 {
+  color: white;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 10px;
+  hyphens: auto;
+  font-family: 'FF Sanuk OT', sans-serif;
+  white-space: nowrap;
+  font-weight: normal;
+}
+
+h6 {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  /* text-transform: uppercase; */
+  font-family: 'FF Sanuk OT Bold', sans-serif;
+  /* font-weight: normal; */
+  /* hyphens: auto; */
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  /* margin-inline-start: 2px; */
+  /* margin-inline-end: 2px; */
+  font-weight: bold;
+  word-wrap: break-word;
+    word-break: break-all;
+    width: 180px;
+    margin-top: -10px;
+
+}
+
+.image-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.image-item {
+  display: flex;
+  /* justify-content: flex-start; */
+  margin-left: -7px;
+  position: relative;
+  margin-top: 30px;
+
+
+  /* width: 48%; */
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.overlay h2 {
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d40040;
+  margin-top: 10px;
+  margin-right: 0;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: 0;
+  font-size: 10px;
+  line-height: 14px;
+  padding: 8px 20px;
+  margin: 0 6px 8px 0;
+  transition: background-color 0.2sease-out, border-color 0.2sease-out, color 0.2sease-out;
+  position: relative;
+  font-family: 'FF Sanuk OT', sans-serif;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease; */
+}
+
+.btn:hover {
+  background-color: #e42;
+}
+
+.event-section {
+  background-color: white;
+  padding: 10px;
+  width: 260px;
+  height: 310px;
+  margin: 0 900px;
+  margin-top: -335px;
+  margin-left: 890px;
+  text-align: left;
+}
+
+.event-item {
+  border-bottom: 1px solid #e6dfd7;
+  padding: 5px 5px;
+  margin-top: 5px;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+}
+
+.date {
+  background-color: #C6BDAE;
+  color: white;
+  /* 调整上下左右内边距来改变文字位置 */
+  padding: 20px 10px;
+  border-radius: 1px;
+  display: inline-block;
+  width: 2.625rem;
+  height: 2.625rem;
+  padding-top: 0.3125rem;
+  /* 减小 padding-top 的值，让文字向上移动 */
+  padding-top: 0;
+  position: absolute;
+  /* text-align: center; */
+  margin-left: 10px;
+  /* 调整字符间距，可根据需求修改数值 */
+  letter-spacing: 0px;
+  font-size: 15px;
+  margin-top: 15px;
+  font-weight: bold;
+  /* 增大 padding-top 值，可根据需求调整 */
+}
+
+.all-offers-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.all-offers-btn:hover {
+  background-color: #eaeaea;
+}
+
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #f43;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-icon img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.second-image {
+  position: relative;
+  /* display: flex; */
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 28px;
+}
+
+.second-image img {
+  width: 270px;
+  height: 310px;
+  /* filter: brightness(0) invert(1); */
+}
+
+p {
+  color: #625651;
+  text-align: center;
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+  padding-top: 2px;
+  font-family: 'FF Sanuk OT Bold', sans-serif;
+  letter-spacing: 0px;
+  font-size: 30px;
+  line-height: 2px;
+  font-size: 15px;
+  margin-left: 60px;
+  /* margin-top: 5px; */
+  /* 字体大小（可根据需要调整） */
+  line-height: 2;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #e6dfd7; /* 横线颜色和粗细 */
+  width: 155px;
+  margin-top: -35px;
+  margin-bottom: 20px;
+  margin-left: 43px;
+}
+
+.vertical-line {
+  display: inline-block;
+  width: 2px;            /* 竖线宽度 */
+  height: 45px;          /* 竖线高度 */
+  background-color: #e6dfd7;   /* 竖线颜色 */
+  margin-left: -1076px;
+  margin-top: -55px;
+  vertical-align: middle;
+  margin-bottom: -28px;
+}
+
+.header-border-center {
+  display: inline-block;
+  width: 2px;
+  height: 45px;
+  background-color: #e6dfd7;
+  margin: 0 -1075px ;
+  vertical-align: middle;
+  margin-top: -30px;
+}
+
+.custom-horizontal-line {
+  width: 272px;                /* 横线长度 */
+  height: 2px;                 /* 横线粗细 */
+  background-color: #e6dfd7;   /* 横线颜色 */
+  margin: 20px 0 20px 44px;    /* 上右下左间距，可根据需要调整 */
+  margin-left: 842px;
+  margin-top: -20px;
+}
